@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .rotate3d, .rotateY, .rotateZ{
+        height: 100px;width: 130px;
+        background-color: aqua;
+    }
+
+    .rotate3d:hover{
+         transform: rotate3d(1,0,0,120deg);
+        transition: 1s;
+    }
+
+    .rotateY:hover{
+        transform: rotateY(180deg);
+        transition: 3s;
+    }
+    .rotateZ:hover{
+        transform: rotate(90deg);
+        transition: 1s;
+    }
+</style>
+</head>
+<body>
+    <div class="rotate3d">
+        <h1>RotateX</h1>
+    </div>
+    <div class="rotateY">
+        <h1>RotateY</h1>
+    </div>
+    <div class="rotateZ">
+        <h1>RotateZ</h1>
+    </div>
+</body>
+</html>
