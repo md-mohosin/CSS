@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anim1 {
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            animation-name: anim1;
+            animation-duration: 4s;
+        }
+
+        .anim2 {
+            height: 150px;
+            width: 150px;
+            background-color: yellow;
+            animation-name: anim2;
+            animation-duration: 4s;
+        }
+
+        .anim3 {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            animation-name: anim3;
+            animation-duration: 4s;
+            position: relative;
+            /* animation-iteration-count: infinite; */
+            animation-iteration-count: 3;
+        }
+
+        .anim4 {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            animation-name: anim4;
+            animation-duration: 4s;
+            position: relative;
+            /* animation-iteration-count: infinite; */
+            animation-iteration-count: 3;
+            animation-direction: reverse;
+            animation-timing-function: linear;
+        }
+
+        @keyframes anim1 {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: blue;
+            }
+        }
+
+        @keyframes anim2 {
+            0% {
+                background-color: yellow;
+            }
+
+            25% {
+                background-color: green;
+            }
+
+            50% {
+                background-color: blue;
+            }
+
+            100% {
+                background-color: red;
+            }
+        }
+
+        @keyframes anim3 {
+            0% {
+                background-color: green;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: blue;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: yellow;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: red;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: skyblue;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        @keyframes anim4 {
+            0% {
+                background-color: blue;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: violet;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: brown;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: aqua;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: chocolate;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body style="display: flex; gap: 40px;">
+    <div class="anim1"></div>
+    <div class="anim2"></div>
+    <div class="anim3"></div>
+    <div class="anim4"></div>
+</body>
+
+</html>
