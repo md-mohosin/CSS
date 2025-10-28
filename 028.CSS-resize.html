@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .horizontal {
+            width: 300px;
+            resize: horizontal;
+            border: 1px solid black;
+            overflow: auto;
+            padding: 10px;
+        }
+
+        .vertical {
+            width: 250px;
+            padding: 10px;
+            resize: vertical;
+            overflow: auto;
+            border: 1px solid;
+        }
+
+        .both{
+            margin-top: 20px;
+            width: 400px;
+             padding: 10px;
+             resize: both;
+             overflow: auto;
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="horizontal">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nesciunt culpa nam eligendi ab unde
+            eius consequuntur repudiandae! Corrupti rerum officia neque excepturi voluptatem eos odio dignissimos
+            commodi facere? Iste vitae exercitationem ab consequatur, ullam assumenda eius! Veniam, voluptatibus
+            delectus consequuntur, cupiditate maiores praesentium sapiente, nesciunt fuga eius a magnam?</p>
+    </div>
+
+
+    <div class="vertical">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nesciunt culpa nam eligendi ab unde
+            eius consequuntur repudiandae! Corrupti rerum officia neque excepturi voluptatem eos odio dignissimos
+            commodi facere? Iste vitae exercitationem ab consequatur, ullam assumenda eius! Veniam, voluptatibus
+            delectus consequuntur, cupiditate maiores praesentium sapiente, nesciunt fuga eius a magnam?</p>
+    </div>
+
+    <div class="both">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nesciunt culpa nam eligendi ab unde
+            eius consequuntur repudiandae! Corrupti rerum officia neque excepturi voluptatem eos odio dignissimos
+            commodi facere? Iste vitae exercitationem ab consequatur, ullam assumenda eius! Veniam, voluptatibus
+            delectus consequuntur, cupiditate maiores praesentium sapiente, nesciunt fuga eius a magnam?</p>
+    </div>
+</body>
+
+</html>

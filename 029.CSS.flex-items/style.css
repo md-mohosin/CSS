@@ -1,0 +1,35 @@
+.grow{
+    background-color: violet;
+    margin-top: 25px;
+    padding: 10px;
+    display: flex;
+    gap: 14px;
+    width: 60%;
+}
+.grow div{
+    background-color: indigo;
+    color: white;
+     padding: 20px 30px;
+     text-align: center;
+}
+
+
+
+
+
+
+
+.shrink{
+    margin-top: 25px;
+    width: 390px;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;gap: 10px;
+}
+
+.shrink div{
+    background-color:#f1f1f1 ;
+    color: black;
+    padding: 20px 30px;
+}
