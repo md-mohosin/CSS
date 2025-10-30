@@ -37,6 +37,9 @@
 
 
 .column {
+    position: absolute;
+    right: 150px;
+    top: 10px;
     float: right;
     margin-top: 0px;
     display: flex;
@@ -57,6 +60,9 @@
 
 
 .column-reverse {
+    position: absolute;
+    right: 0;
+    top: 10px;
     margin-right: 20px;
     display: flex;
     float: right;
@@ -72,3 +78,11 @@
     background-color: blueviolet;
     padding: 10px;
 }
+
+
+
+
+
+
+
+.wrap {}
