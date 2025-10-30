@@ -119,3 +119,28 @@
     background-color:#04AA6D ;
     padding: 10px 25px;
 }
+
+
+
+
+
+
+
+
+
+
+.wrap-reverse{
+    margin-top: 30px;
+    background-color: dodgerblue;
+    display: flex;
+    width: 70%;
+    gap: 10px;
+    padding: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+.wrap-reverse div{
+    background-color: #fff;
+    padding: 10px 25px;
+}
