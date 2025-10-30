@@ -85,4 +85,37 @@
 
 
 
-.wrap {}
+.no-wrap {
+    margin-top: 90px;
+    background-color: #04AA6D;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 70%;
+    gap: 20px;
+}
+.no-wrap div{
+    background-color: aquamarine;
+    padding: 10px 25px;
+}
+
+
+
+
+
+
+
+.wrap{
+    margin-top: 30px;
+    background-color:rgb(3, 114, 114) ;
+    max-width: 900px;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.wrap div{
+    background-color:#04AA6D ;
+    padding: 10px 25px;
+}
