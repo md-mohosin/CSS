@@ -33,3 +33,32 @@
     color: black;
     padding: 20px 30px;
 }
+
+
+
+
+.container1{
+    display: flex;
+    gap: 10px;
+}
+
+.container1 div{
+    background-color: blue;
+    padding: 10px;
+    color: white;
+}
+
+
+
+
+
+.container2{
+    display: inline-flex;
+    gap: 10px;
+}
+
+.container2 div{
+background-color: blue;
+padding: 10px;
+color: violet;
+}
