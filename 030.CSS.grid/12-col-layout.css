@@ -49,3 +49,50 @@ nav ul {
     grid-column: col-start / span 12;
     padding: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE FOR TABLET */
+@media (min-width:768px) and (max-width:1023px) {
+    nav{
+        grid-row: 2;
+        grid-column: col-start / span 12;
+    }
+nav ul{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+    .products{
+        grid-row: 3;
+        grid-column: col-start / span 2;
+    }
+
+    .content{
+        grid-row: 3;
+        grid-column: col-start 3 / span 10;
+    }
+
+    .get-touch{
+        grid-row: 4;
+        grid-column: col-start / span 2;
+    }
+
+    .footer{
+        grid-row: 4;
+        grid-column: col-start 3 /span 10;
+    }
+}
