@@ -37,8 +37,6 @@
 
 
 
-
-
 .grid3 {
     margin-top: 30px;
     background-color: violet;
@@ -48,7 +46,6 @@
     gap: 10px;
     padding: 10px;
 }
-
 
 .grid3 div {
     background-color: indigo;
@@ -60,40 +57,159 @@
 
 
 
-.grid4{
-     margin-top: 30px;
+.grid4 {
+    margin-top: 30px;
     background-color: navy;
     width: 70%;
     display: grid;
     gap: 10px;
     padding: 10px;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
-.grid4 div{
+
+.grid4 div {
     background-color: skyblue;
     padding: 20px 0px;
     text-align: center;
-    
+
 }
 
 
 
 
 
-
-
-
-.grid5{
+.grid5 {
     margin-top: 30px;
     background-color: rgb(4, 247, 166);
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 10px;
     width: 80%;
 }
-.grid5 div{
+
+.grid5 div {
     background-color: rgb(237, 122, 122);
     text-align: center;
     padding: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: 20px;
+}
+
+.head {
+    grid-column: col-start / span 12;
+    background-color: beige;
+    padding: 10px;
+    border: 1px solid blue;
+}
+
+nav {
+    background-color: beige;
+    border: 1px solid blue;
+    grid-column: col-start / span 12;
+}
+
+nav ul {
+    padding: 10px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.content,
+.sidebar,
+.ads,
+.footer {
+    background-color: beige;
+    border: 1px solid blue;
+    padding: 10px;
+    grid-column: col-start / span 12;
+}
+
+/* .sidebar, .ads,.footer{
+     background-color: beige;
+    border: 1px solid blue;
+    padding: 10px;
+} */
+
+
+
+
+
+
+
+
+
+
+/* media query */
+
+@media (min-width:576px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .sidebar{
+        grid-column: col-start / span 3;
+        grid-row: 3;
+    }
+    .content,.footer{
+        grid-column: col-start 4 / span 9;
+    }
+
+    .ads{
+        grid-column: col-start / span 3;
+    }
+}
+
+
+
+
+
+
+
+@media (min-width:768px) {
+    nav {
+        grid-column: col-start/span 2;
+        grid-row: 2 / 4;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .content {
+        grid-column: col-start 3 / span 8;
+        grid-row: 2 / 4;
+    }
+
+    .sidebar,
+    .ads {
+        grid-column: col-start 11/ span 2;
+    }
+
+    .footer {
+        grid-column: col-start / span 12;
+    }
+
 }
