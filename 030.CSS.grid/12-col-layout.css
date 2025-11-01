@@ -1,4 +1,51 @@
-.layout{
+.layout {
     display: grid;
     grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: 20px;
+}
+
+header {
+    grid-column: col-start /span 12;
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+nav {
+    background-color: aquamarine;
+    padding: 10px;
+    grid-column: col-start / span 2;
+    grid-row: 2/4;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content {
+    background-color: aquamarine;
+    grid-column: col-start 3 / span 8;
+    padding: 10px;
+    grid-row: 2/4;
+}
+
+.products {
+    background-color: aquamarine;
+    padding: 10px;
+    grid-column: col-start 11/ span 2;
+}
+
+.get-touch{
+    background-color: aquamarine;
+    grid-column: col-start 11 /span 2;
+    padding: 10px;
+}
+
+.footer{
+    background-color: aquamarine;
+    grid-column: col-start / span 12;
+    padding: 10px;
 }
