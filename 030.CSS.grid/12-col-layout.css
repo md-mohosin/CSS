@@ -38,13 +38,13 @@ nav ul {
     grid-column: col-start 11/ span 2;
 }
 
-.get-touch{
+.get-touch {
     background-color: aquamarine;
     grid-column: col-start 11 /span 2;
     padding: 10px;
 }
 
-.footer{
+.footer {
     background-color: aquamarine;
     grid-column: col-start / span 12;
     padding: 10px;
@@ -67,32 +67,59 @@ nav ul {
 
 /* RESPONSIVE FOR TABLET */
 @media (min-width:768px) and (max-width:1023px) {
-    nav{
+    nav {
         grid-row: 2;
         grid-column: col-start / span 12;
     }
-nav ul{
-    flex-direction: row;
-    justify-content: space-between;
-}
 
-    .products{
+    nav ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .products {
         grid-row: 3;
         grid-column: col-start / span 2;
     }
 
-    .content{
+    .content {
         grid-row: 3;
         grid-column: col-start 3 / span 10;
     }
 
-    .get-touch{
+    .get-touch {
         grid-row: 4;
         grid-column: col-start / span 2;
     }
 
-    .footer{
+    .footer {
         grid-row: 4;
         grid-column: col-start 3 /span 10;
+    }
+}
+
+
+
+
+
+
+
+/* MOBILE RESPONSIVE */
+@media (max-width:766px) {
+    nav{
+        grid-row: 2;
+        grid-column: col-start /span 12;
+    }
+    nav ul{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .content{
+        grid-row: 3;
+        grid-column: col-start / span 12;
+    }
+    .products,.get-touch{
+        grid-column: col-start / span 12;
     }
 }
