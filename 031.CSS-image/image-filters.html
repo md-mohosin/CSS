@@ -4,10 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .img-container{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .img-container img{
+            border: 1px solid blueviolet;
+        }
+    </style>
 </head>
 <body>
-    <div>
+    <div class="img-container">
+        <img src="./pineapple.jpg" alt="">
         <img style="filter: blur(4px);" src="./pineapple.jpg" alt="">
+
+
+        <img style="filter: brightness(180%);" src="./pineapple.jpg" alt="">
+        <img style="filter: brightness(40%);" src="./pineapple.jpg" alt="">
     </div>
 </body>
 </html>
