@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="display: flex; justify-content: space-between;">
+<body style="display: grid; grid-template-columns: repeat(4,1fr); place-items: center;">
     <div>
         <h1 style="text-align: center;">Circel shape 50%</h1>
         <img style="clip-path: circle(50%);" width="250" height="250" src="./pineapple.jpg" alt="">
@@ -15,6 +15,18 @@
     <div>
         <h1 style="text-align: center;">Circel shape 50%</h1>
         <img style="clip-path: circle(50% at right);" width="250" height="250" src="./pineapple.jpg" alt="">
+    </div>
+
+
+    <div>
+        <h1 style="text-align: center;">Ellips shape</h1>
+        <img style="clip-path: ellipse(50% 35%)" width="250" height="250" src="./pineapple.jpg" alt="">
+    </div>
+
+
+    <div>
+        <h1 style="text-align: center;">Ellips shape right</h1>
+        <img style="clip-path: ellipse(50% 35% at right)" width="250" height="250" src="./pineapple.jpg" alt="">
     </div>
 </body>
 </html>
