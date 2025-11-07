@@ -2,49 +2,53 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .a th,
+    .a td {
+      border-bottom: 1px solid gray;
+      border-collapse: collapse;
+      padding: 6px;
+      text-align: left;
+    }
 
-.a th, .a td{
-    border-bottom: 1px solid gray;
-    border-collapse: collapse;
-    padding: 6px;
-    text-align: left;
-}
-.a{
-    border-collapse: collapse;
-    width: 50%;
-}
-.a tr:hover{
-    background-color: coral;
-}
+    .a {
+      border-collapse: collapse;
+      width: 50%;
+    }
+
+    .a tr:hover {
+      background-color: coral;
+    }
 
 
-.b{
-  margin-top: 80px;
-  width: 50%;
-  text-align: left;
-  border-collapse: collapse;
-}
+    .b {
+      margin-top: 80px;
+      width: 50%;
+      text-align: left;
+      border-collapse: collapse;
+    }
 
-.b th, .b td{
-   padding: 6px;
-   
-}
+    .b th,
+    .b td {
+      padding: 6px;
 
-.b tr:nth-child(even){background-color: #f2f2f2;}
+    }
 
-.table-container{
-  overflow-x: auto;
-}
+    .b tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
 
-    </style>
+    .table-container {
+      overflow-x: auto;
+    }
+  </style>
 </head>
 
 <body>
-   <table class="a">
+  <table class="a">
     <tr>
       <th>Name</th>
       <th>Age</th>
@@ -66,7 +70,7 @@
       <td>Footballer</td>
       <td>Football</td>
     </tr>
-    
+
     <tr>
       <td>Shakib Al Hasan</td>
       <td>38</td>
@@ -98,53 +102,53 @@
 
 
 
-   <div class="table-container">
+  <div class="table-container">
     <table class="b">
-    <tr>
-      <th>Name</th>
-      <th>Age</th>
-      <th>Country</th>
-      <th>Profession</th>
-      <th>Sport</th>
-    </tr>
-    <tr>
-      <td>Cristiano Ronaldo</td>
-      <td>39</td>
-      <td>Portugal</td>
-      <td>Footballer</td>
-      <td>Football</td>
-    </tr>
-    <tr>
-      <td>Lionel Messi</td>
-      <td>38</td>
-      <td>Argentina</td>
-      <td>Footballer</td>
-      <td>Football</td>
-    </tr>
-    
-    <tr>
-      <td>Shakib Al Hasan</td>
-      <td>38</td>
-      <td>Bangladesh</td>
-      <td>Cricketer</td>
-      <td>Cricket</td>
-    </tr>
-    <tr>
-      <td>Roger Federer</td>
-      <td>44</td>
-      <td>Switzerland</td>
-      <td>Tennis Player</td>
-      <td>Tennis</td>
-    </tr>
-    <tr>
-      <td>Usain Bolt</td>
-      <td>39</td>
-      <td>Jamaica</td>
-      <td>Sprinter</td>
-      <td>Athletics</td>
-    </tr>
-  </table>
-   </div>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Country</th>
+        <th>Profession</th>
+        <th>Sport</th>
+      </tr>
+      <tr>
+        <td>Cristiano Ronaldo</td>
+        <td>39</td>
+        <td>Portugal</td>
+        <td>Footballer</td>
+        <td>Football</td>
+      </tr>
+      <tr>
+        <td>Lionel Messi</td>
+        <td>38</td>
+        <td>Argentina</td>
+        <td>Footballer</td>
+        <td>Football</td>
+      </tr>
+
+      <tr>
+        <td>Shakib Al Hasan</td>
+        <td>38</td>
+        <td>Bangladesh</td>
+        <td>Cricketer</td>
+        <td>Cricket</td>
+      </tr>
+      <tr>
+        <td>Roger Federer</td>
+        <td>44</td>
+        <td>Switzerland</td>
+        <td>Tennis Player</td>
+        <td>Tennis</td>
+      </tr>
+      <tr>
+        <td>Usain Bolt</td>
+        <td>39</td>
+        <td>Jamaica</td>
+        <td>Sprinter</td>
+        <td>Athletics</td>
+      </tr>
+    </table>
+  </div>
 </body>
 
 </html>
