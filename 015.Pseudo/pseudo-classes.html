@@ -1,29 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        p{
+       .hover p {
             display: none;
         }
-        div:hover p{
+
+.hover{
+    width: 300px;
+}
+
+        .hover:hover p {
             display: block;
             background-color: blue;
             color: white;
             padding: 6px;
             width: 110px;
         }
+
+        h2:first-child{
+            color: red;
+        }
     </style>
 </head>
+
 <body>
     <main>
-        <div>
+        <div class="hover">
             <h1>My name is Mohsin</h1>
             <p>Pseudo classes</p>
         </div>
-        
+        <h2>Some text</h2>
+        <div>
+            <h2>Some text</h2>
+            <h2>Some text</h2>
+        </div>
+        <h2>Some text</h2>
+        <div>
+            <h2>Some text</h2>
+            <h2>Some text</h2>
+            <h2>Some text</h2>
+        </div>
     </main>
 </body>
+
 </html>
