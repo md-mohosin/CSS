@@ -1,0 +1,20 @@
+body{
+    counter-reset: item p product;
+}
+
+h2::before{
+    counter-increment: item;
+    content: counter(item) '. ';
+}
+
+
+p::before{
+    counter-increment:p -1 ;
+    content: counter(p) '. ';
+}
+
+
+h3::before{
+    counter-increment: product 2;
+    content: counter(product) '. ';
+}
