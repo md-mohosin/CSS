@@ -1,0 +1,19 @@
+body {
+    counter-reset: title;
+}
+
+h1 {
+    counter-reset: paragraph;
+}
+
+h1::before {
+    counter-increment: title;
+    content: counter(title) '. ';
+    color: red;
+}
+
+p::before {
+    counter-increment: paragraph;
+    content: counter(title) '. ' counter(paragraph) " ";
+    color:blue
+}

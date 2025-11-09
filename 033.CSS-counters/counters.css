@@ -1,20 +1,20 @@
 body{
-    counter-reset: item p product;
+    counter-reset: short full p;
 }
 
+h1::before{
+    counter-increment: short;
+    content: counter(short) '. ';
+}
+
+
 h2::before{
-    counter-increment: item;
-    content: counter(item) '. ';
+    counter-increment: full -1;
+    content: counter(full) '. ';
 }
 
 
 p::before{
-    counter-increment:p -1 ;
+    counter-increment: p 2;
     content: counter(p) '. ';
-}
-
-
-h3::before{
-    counter-increment: product 2;
-    content: counter(product) '. ';
 }
